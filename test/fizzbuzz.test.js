@@ -71,4 +71,21 @@ describe('Fizz Buzz', () => {
     ]
     expect(actual).to.deep.equal(expected)
   })
+
+  describe('Edge cases', () => {
+    it('should calculate the value of 78 as Fizz', () => {
+      const actual = fizzbuzz.fizzbuzz(78)
+      expect(actual).to.equal('Fizz')
+    })
+
+    it('should calculate the value of 80 as Buzz', () => {
+      const actual = fizzbuzz.fizzbuzz(80)
+      expect(actual).to.equal('Buzz')
+    })
+
+    it('should calculate the value of 90 as FizzBuzz', () => {
+      const actual = fizzbuzz.fizzbuzz(90)
+      expect(actual).to.equal('FizzBuzz')
+    })
+  })
 })

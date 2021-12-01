@@ -22,4 +22,4 @@ if (process.argv[2] === 'run') {
   run(100)
 }
 
-module.exports = { run }
+module.exports = { run, fizzbuzz }
