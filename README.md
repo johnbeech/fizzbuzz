@@ -17,3 +17,7 @@ Run `npm install` to bring down `mocha` and `chai`, then run:
 ```
 npm test
 ```
+
+## Linting
+
+If the tests report linting errors - they can be fixed by running `npm run lint` using `standard`.
