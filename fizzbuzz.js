@@ -1,8 +1,21 @@
-function run (limit) {
-  console.log('1')
+function fizzbuzz (num) {
+  let result = ''
+  if (num % 3 === 0) {
+    result = 'Fizz'
+  }
+  return result || (num + '')
 }
 
-if (process.argv[0].includes('node')) {
+function run (limit) {
+  let n = 1
+  while (n <= limit) {
+    const line = fizzbuzz(n)
+    console.log(line)
+    n++
+  }
+}
+
+if (process.argv[2] === 'run') {
   run(100)
 }
 

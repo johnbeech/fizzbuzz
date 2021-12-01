@@ -7,7 +7,7 @@ A program that prints the numbers from 1 to 100. But for multiples of three prin
 Checkout this repo, and then run:
 
 ```
-node fizzbuzz
+node fizzbuzz run
 ```
 
 ## Tests
