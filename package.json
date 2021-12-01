@@ -1,0 +1,24 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "A fizzbuzz application written in nodejs with tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnbeech/fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnbeech/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/johnbeech/fizzbuzz#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
