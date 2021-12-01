@@ -25,7 +25,7 @@ describe('Fizz Buzz', () => {
     expect(actual).to.deep.equal(expected)
   })
 
-  it('should print out numbers, and the word fizz for the number 3 to the console', () => {
+  it('should print out numbers, and the word Fizz for the number 3 to the console', () => {
     fizzbuzz.run(3)
     const actual = logs
     const expected = [
@@ -36,7 +36,7 @@ describe('Fizz Buzz', () => {
     expect(actual).to.deep.equal(expected)
   })
 
-  it('should print out numbers, and the word buzz for the number 5 to the console', () => {
+  it('should print out numbers, and the word Buzz for the number 5 to the console', () => {
     fizzbuzz.run(5)
     const actual = logs
     const expected = [
@@ -45,6 +45,29 @@ describe('Fizz Buzz', () => {
       ['Fizz'],
       ['4'],
       ['Buzz']
+    ]
+    expect(actual).to.deep.equal(expected)
+  })
+
+  it('should print out numbers, and the word FizzBuzz for numbers that are multiples of 3 and 5', () => {
+    fizzbuzz.run(15)
+    const actual = logs
+    const expected = [
+      ['1'],
+      ['2'],
+      ['Fizz'],
+      ['4'],
+      ['Buzz'],
+      ['Fizz'],
+      ['7'],
+      ['8'],
+      ['Fizz'],
+      ['Buzz'],
+      ['11'],
+      ['Fizz'],
+      ['13'],
+      ['14'],
+      ['FizzBuzz']
     ]
     expect(actual).to.deep.equal(expected)
   })
