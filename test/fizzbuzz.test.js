@@ -35,4 +35,17 @@ describe('Fizz Buzz', () => {
     ]
     expect(actual).to.deep.equal(expected)
   })
+
+  it('should print out numbers, and the word buzz for the number 5 to the console', () => {
+    fizzbuzz.run(5)
+    const actual = logs
+    const expected = [
+      ['1'],
+      ['2'],
+      ['Fizz'],
+      ['4'],
+      ['Buzz']
+    ]
+    expect(actual).to.deep.equal(expected)
+  })
 })
